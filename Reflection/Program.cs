@@ -51,6 +51,10 @@ namespace Reflection
         static void Main(string[] args)
         {
             Invoke();
+            Console.WriteLine("<-------------Annotations------------->");
+            NewAttribute.AttributeDisplay(typeof(Employer));
+            Console.WriteLine();
+            NewAttribute.AttributeDisplay(typeof(Employee));
         }
     }
 }
